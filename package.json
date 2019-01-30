@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate Workflow CSS",
+  "main": "index.js",
+  "scripts": {
+    "live": "live-server",
+    "gulp": "gulp watch",
+    "dev": "concurrently \"npm run live\" \"npm run gulp\""
+  },
+  "author": "vnscriptkid",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0"
+  }
+}
