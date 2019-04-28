@@ -1,0 +1,7 @@
+// desktop-first breakpoints 
+$breakpoints: (
+    // large is default case, > 1200px
+    medium: 1200px, // from 993 to 1200px
+    small: 992px, // from 769 to 992
+    xsmall: 768px // <= 768px
+)

@@ -1,0 +1,32 @@
+.footer {
+
+    background: black;
+    color: white;
+    display: flex;
+    padding: 2rem 0;
+    
+    &__copyright {
+        margin-right: auto;
+        align-self: center;
+    }
+
+    &__socials {
+
+    }
+
+    &__social-icon {
+        margin-left: 1rem;
+        font-size: 1rem;
+        height: 2rem;
+        width: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        &:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+    }
+}

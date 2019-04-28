@@ -1,0 +1,19 @@
+.special {
+    &__icon {
+        color: orange;
+        margin-bottom: .5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__sub-title {
+
+    }
+
+    @include mediaQuery(small) {
+        margin-bottom: 1rem;
+    }
+}

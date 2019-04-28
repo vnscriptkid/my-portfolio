@@ -1,0 +1,15 @@
+#specialize {
+
+}
+
+.specials {
+    padding-top: 3rem;
+
+    @include mediaQuery(medium) {
+        padding-top: 2rem;
+    }
+
+    @include mediaQuery(small) {
+        padding-top: 1rem;
+    }
+}

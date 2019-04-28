@@ -1,0 +1,39 @@
+#navLogo {
+    height: 51px;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+.navbar {
+    display: flex;
+    
+    &__links {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        @include mediaQuery(small) {
+            margin-left: 0;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: #fff;
+        padding-bottom: 5px;
+        transition: all .2s;
+
+        &:hover {
+            border-bottom: 2px solid orange;
+        }
+    }
+
+    @include mediaQuery(small) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

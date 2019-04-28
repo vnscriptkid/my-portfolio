@@ -1,19 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="build/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="build/main.css">
-    <title>BoilerPlate</title>
+    <title>vnscriptkid</title>
 </head>
+
 <body>
-    <h1>First instructions</h1>
-    <ul>
-        <li>Install gulp globally: <code>npm install gulp-cli -g </code></li>
-        <li>Install dependencies locally: <code>npm install</code></li>
-        <li>Start your project: <code>npm run dev</code></li>
-    </ul>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="./img/me.png" alt="LOGO" id="navLogo">
+                <ul class="navbar__links">
+                    <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+                    <li class="navbar__item"><a href="#about" class="navbar__link">About Me</a></li>
+                    <li class="navbar__item"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+                    <li class="navbar__item"><a href="#skills" class="navbar__link">Skills</a></li>
+                    <li class="navbar__item"><a href="#work" class="navbar__link">My Work</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__content">
+                <h1 class="header__heading text-typed" data-wait="3000"
+                    data-words='["Developer", "Bartender", "Tour Guide", "Traveller"]'>I Am Thanh The</h1>
+                <p class="header__sub-heading">I specilize in graphic design, UI/UX and photography</p>
+                <a href="#" class="btn btn--orange">View My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="specialize" class="section text-center">
+        <div class="container">
+            <h2 class="section-heading border-bottom">I Specialize In</h2>
+            <p class="section-sub-heading">Photography as well as creating digital masterpieces and UI/UX layouts for
+                websites and mobile applications</p>
+            <div class="specials grid grid--specialize">
+                <div class="special">
+                    <i class="fas fa-file-alt fa-2x special__icon"></i>
+                    <h3 class="special__title">Concepting</h3>
+                    <p class="special__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                        sequi. Minus sint esse quos
+                        corrupti quae exercitationem ipsum mollitia nobis!</p>
+                </div>
+                <div class="special">
+                    <i class="fas fa-desktop fa-2x special__icon"></i>
+                    <h3 class="special__title">UI/UX</h3>
+                    <p class="special__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                        sequi. Minus sint esse quos
+                        corrupti quae exercitationem ipsum mollitia nobis!</p>
+                </div>
+                <div class="special">
+                    <i class="fas fa-object-ungroup fa-2x special__icon"></i>
+                    <h3 class="special__title">Visual Design</h3>
+                    <p class="special__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                        sequi. Minus sint esse quos
+                        corrupti quae exercitationem ipsum mollitia nobis!</p>
+                </div>
+                <div class="special">
+                    <i class="fas fa-thumbs-up fa-2x special__icon"></i>
+                    <h3 class="special__title">Interaction</h3>
+                    <p class="special__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                        sequi. Minus sint esse quos
+                        corrupti quae exercitationem ipsum mollitia nobis!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="stats" class="section text-center">
+        <div class="stats grid">
+            <div class="stat">
+                <i class="fas fa-users fa-3x stat__icon"></i>
+                <h3 class="stat__title">Clients</h3>
+                <p class="stat__number">20</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-award fa-3x stat__icon"></i>
+                <h3 class="stat__title">Awards</h3>
+                <p class="stat__number">5</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-hourglass-start fa-3x stat__icon"></i>
+                <h3 class="stat__title">Hours Worked</h3>
+                <p class="stat__number">3500</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-code-branch fa-3x stat__icon"></i>
+                <h3 class="stat__title">Projects Completed</h3>
+                <p class="stat__number">25</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section text-center">
+        <div class="container">
+            <h2 class="section-heading border-bottom">My Creative Process</h2>
+            <p class="section-sub-heading">All of my UI/UX and design projects are based off of a praticed formula to
+                get
+                the result that I am looking for</p>
+            <div class="processes grid grid--processes">
+                <div class="process">
+                    <i class="fas fa-file-alt fa-4x process__icon">
+                        <div class="process__number">1</div>
+                    </i>
+                    <h3 class="process__title">Discuss the project</h3>
+                    <p class="process__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque
+                        dignissimos ratione. Nostrum rem cupiditate optio ipsam. Maxime, quibusdam eligendi voluptate
+                        necessitatibus alias expedita quae voluptas obcaecati dolore vel deserunt.</p>
+                </div>
+                <div class="process">
+                    <i class="fas fa-desktop fa-4x process__icon">
+                        <div class="process__number">2</div>
+                    </i>
+                    <h3 class="process__title">Brainstorm & Concept</h3>
+                    <p class="process__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque
+                        dignissimos ratione. Nostrum rem cupiditate optio ipsam. Maxime, quibusdam eligendi voluptate
+                        necessitatibus alias expedita quae voluptas obcaecati dolore vel deserunt.</p>
+                </div>
+                <div class="process">
+                    <i class="fas fa-object-ungroup fa-4x process__icon">
+                        <div class="process__number">3</div>
+                    </i>
+                    <h3 class="process__title">UI/UX Planning</h3>
+                    <p class="process__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque
+                        dignissimos ratione. Nostrum rem cupiditate optio ipsam. Maxime, quibusdam eligendi voluptate
+                        necessitatibus alias expedita quae voluptas obcaecati dolore vel deserunt.</p>
+                </div>
+                <div class="process">
+                    <i class="fas fa-thumbs-up fa-4x process__icon">
+                        <div class="process__number">4</div>
+                    </i>
+                    <h3 class="process__title">Interaction</h3>
+                    <p class="process__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cumque
+                        dignissimos ratione. Nostrum rem cupiditate optio ipsam. Maxime, quibusdam eligendi voluptate
+                        necessitatibus alias expedita quae voluptas obcaecati dolore vel deserunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section text-center about">
+        <div class="container">
+            <h2 class="section-heading border-bottom">About Me</h2>
+            <p class="section-sub-heading">Let me tell you a little about myself and what I do</p>
+            <div class="about__introduction">
+                <img class="about__avatar" src="./img/myImg/IMG_2122.JPG" alt="ME">
+                <div class="about__content">
+                    <h3 class="about__title">Your Projects Is In Safe Hands</h3>
+                    <p class="about__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ullam
+                        delectus commodi numquam. Nam ut suscipit repellendus earum officia, fuga quisquam aut nulla
+                        maxime enim sapiente dolor eaque perferendis vero, error iste adipisci expedita quam laudantium
+                        vel at ipsum! Expedita?</p>
+                </div>
+            </div>
+            <div class="awards grid">
+                <div class="award">
+                    <i class="award__icon fas fa-award fa-3x"></i>
+                    <h3 class="award__title">Award One</h3>
+                    <p class="award__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+                        reprehenderit.</p>
+                </div>
+                <div class="award">
+                    <i class="award__icon fas fa-award fa-3x"></i>
+                    <h3 class="award__title">Award One</h3>
+                    <p class="award__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+                        reprehenderit.</p>
+                </div>
+                <div class="award">
+                    <i class="award__icon fas fa-award fa-3x"></i>
+                    <h3 class="award__title">Award One</h3>
+                    <p class="award__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+                        reprehenderit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section--dark">
+        <div class="container">
+            <h2 class="section-heading border-bottom text-center">Technical Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3 class="skill__name">HTML & CSS</h3>
+                    <div class="skill__progress-bg">
+                        <div style="width: 90%" class="skill__progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="skill__name">React</h3>
+                    <div class="skill__progress-bg">
+                        <div style="width: 60%" class="skill__progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="skill__name">Angular</h3>
+                    <div class="skill__progress-bg">
+                        <div style="width: 70%" class="skill__progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="skill__name">Vue</h3>
+                    <div class="skill__progress-bg">
+                        <div style="width: 40%" class="skill__progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="skill__name">Node JS</h3>
+                    <div class="skill__progress-bg">
+                        <div style="width: 85%" class="skill__progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-heading border-bottom text-center">Testimonials</h2>
+            <p class="section-sub-heading text-center">Take a look at what my clients say!</p>
+            <div class="testimonials grid grid--testimonials">
+                <div class="testimonial">
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In adipisci
+                        ipsam
+                        harum impedit, architecto quis laborum, ea at cum non quos suscipit. Vero nisi repellat adipisci
+                        earum quas doloremque delectus?</p>
+                    <div class="testimonial__user-info">
+                        <img class="testimonial__avatar" src="./img/testimonials/person1.jpg" alt="PERSON_1">
+                        <span>Sam Smith, New York</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In adipisci
+                        ipsam
+                        harum impedit, architecto quis laborum, ea at cum non quos suscipit. Vero nisi repellat adipisci
+                        earum quas doloremque delectus?</p>
+                    <div class="testimonial__user-info">
+                        <img class="testimonial__avatar" src="./img/testimonials/person2.jpg" alt="PERSON_2">
+                        <span>Sara Williams, Michigan</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In adipisci
+                        ipsam
+                        harum impedit, architecto quis laborum, ea at cum non quos suscipit. Vero nisi repellat adipisci
+                        earum quas doloremque delectus?</p>
+                    <div class="testimonial__user-info">
+                        <img class="testimonial__avatar" src="./img/testimonials/person3.jpg" alt="PERSON_3">
+                        <span>Jill Johnson, London</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In adipisci
+                        ipsam
+                        harum impedit, architecto quis laborum, ea at cum non quos suscipit. Vero nisi repellat adipisci
+                        earum quas doloremque delectus?</p>
+                    <div class="testimonial__user-info">
+
+                        <img class="testimonial__avatar" src="./img/testimonials/person4.jpg" alt="PERSON_4">
+                        <span>Steve Thompson, Boston</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="section text-center work">
+        <div class="container">
+            <h2 class="section-heading border-bottom">My Work</h2>
+            <div class="section-sub-heading mb-2">Check out some of my projects</div>
+            <div class="work__list grid grid--work">
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item1.png" alt="item1">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item2.png" alt="item2">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item3.png" alt="item3">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item4.png" alt="item4">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item5.png" alt="item5">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item6.png" alt="item6">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item7.png" alt="item7">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item8.png" alt="item8">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img class="work__img" src="./img/items/item9.png" alt="item9">
+                    <div class="work__wrapped-text">
+                        <p>Project Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container grid">
+            <p class="footer__copyright">Copyright 2019. All Rights Reserved</p>
+            <div class="footer__socials">
+                <i class="fab fa-twitter footer__social-icon"></i>
+                <i class="fab fa-facebook footer__social-icon"></i>
+                <i class="fab fa-instagram footer__social-icon"></i>
+                <i class="fab fa-linkedin footer__social-icon"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>

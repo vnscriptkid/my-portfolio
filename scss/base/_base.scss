@@ -1,0 +1,175 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    // color: blue;
+    
+    // @include mediaQuery(medium) {
+    //     color: green; 
+    // }
+    
+    // @include mediaQuery(small) {    
+    //     color: red;
+    // } 
+
+    // @include mediaQuery(xsmall) {
+    //     color: purple;
+    // }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    @include mediaQuery(medium) {
+        width: 80%;
+    }
+
+    @include mediaQuery(small) {
+        width: 90%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+
+    &--orange {
+        color: black;
+        background-color: orange;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}
+
+.section {
+    padding: 3rem 0;
+
+    &--dark {
+        background-color: lighten(black, 10%);
+        color: white;
+    }
+
+    @include mediaQuery(medium) {
+        padding: 1.5rem 0;
+    }
+
+    @include mediaQuery(small) {
+        padding: 1rem 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.section-sub-heading {
+    font-size: 1.2rem;
+}
+
+.border-bottom { 
+    &::after {
+        content: ""; 
+        display: block;
+        height: 2px;
+        width: 5%;
+        background-color: orange;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}
+
+.grid {
+    display: flex;
+    
+    // &--4 {
+    //     @include mediaQuery(medium) {
+    //         flex-wrap: wrap;
+
+    //         & > * {
+    //             width: 50%;
+    //             margin: 0 !important;
+    //             margin-bottom: 1rem !important; 
+    //         }
+    //     }
+    // }
+    &--specialize {
+        @include mediaQuery(medium) {
+            flex-wrap: wrap;
+
+            & > * {
+                width: 50%;
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    &--processes {
+        @include mediaQuery(medium) {
+            flex-wrap: wrap;
+
+            & > * {
+                width: 50%;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    &--testimonials {
+        @include mediaQuery(medium) {
+            flex-wrap: wrap; 
+
+            & > * {
+                width: 50%;  
+                margin-right: 0 !important;
+                padding: 1rem;
+            }
+        } 
+    }
+
+    // &--work {
+    //     @include mediaQuery(xsmall) {
+    //         & > * {
+    //             padding: 0 2rem !important;
+    //         }
+    //     }
+    // }
+
+    @include mediaQuery(xsmall) {
+        display: block;
+
+        & > * {
+            width: 100% !important;
+        }
+    }
+}

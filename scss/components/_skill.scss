@@ -1,0 +1,19 @@
+.skill {
+    margin-bottom: 1rem;
+    
+    &__name {
+        margin-bottom: .5rem;
+    }
+
+    &__progress-bg {
+        background-color: gainsboro;
+        height: 1.5rem;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__progress {
+        background-color: orange;
+        height: 100%;
+    }
+}

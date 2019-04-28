@@ -3,6 +3,7 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
+  'abstracts/generals',
   'abstracts/functions',
   'abstracts/mixins';
 
@@ -18,8 +19,24 @@
   'base/helpers';
 
 // 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/specialize',
+  'layout/stats',
+  'layout/process',
+  'layout/footer',
+  'layout/about',
+  'layout/work';
 
 // 5. Components
+@import
+  'components/navbar',
+  'components/special',
+  'components/stat',
+  'components/process',
+  'components/award',
+  'components/skill',
+  'components/testimonial';
 
 // 6. Page-specific styles
 

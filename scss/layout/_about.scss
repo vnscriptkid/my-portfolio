@@ -1,0 +1,39 @@
+#about {
+
+}
+
+.about {
+    &__introduction {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        @include mediaQuery(small) {
+            padding-top: 1rem;
+        }
+    }
+
+    &__content {
+        background-color: lighten(gainsboro, 10%);
+        align-self: stretch;
+        margin-left: 1.5rem;
+        padding-top: 1rem;
+        border-left: 2px solid orange;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__avatar {
+        width: 30%;
+
+        @include mediaQuery(small) {
+            display: none;  
+        }
+    }
+}
+
+.awards {
+    padding-top: 2rem;
+}

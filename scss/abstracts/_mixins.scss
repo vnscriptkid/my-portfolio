@@ -1,0 +1,10 @@
+@mixin mediaQuery($bpName) {
+    @if ($bpName != medium and $bpName != small and $bpName != xsmall) {
+        @error 'Breakpoint argument of mediaQuery mixin must be either medium, small or xsmall. Yours is `#{$bpName}`';
+    } @else {
+        $size: map-get($map: $breakpoints, $key: $bpName);
+        @media only screen and (max-width: $size) {
+            @content;
+        }
+    }
+}
