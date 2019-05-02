@@ -315,6 +315,10 @@ html {
 img {
   width: 100%; }
 
+body {
+  line-height: 1.6;
+  letter-spacing: 1px; }
+
 a {
   text-decoration: none; }
 
@@ -375,6 +379,8 @@ ul {
 
 .grid {
   display: flex; }
+  .grid--specialize > * {
+    width: 25%; }
   @media only screen and (max-width: 1200px) {
     .grid--specialize {
       flex-wrap: wrap; }
@@ -396,6 +402,8 @@ ul {
         width: 50%;
         margin-right: 0 !important;
         padding: 1rem; } }
+  .grid--awards > * {
+    width: 33.3333%; }
   @media only screen and (max-width: 768px) {
     .grid {
       display: block; }
@@ -487,7 +495,8 @@ body {
     line-height: 2rem;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid white; }
+    border: 2px solid white;
+    color: white; }
     .footer__social-icon:hover {
       background-color: orange;
       cursor: pointer; }
@@ -504,7 +513,7 @@ body {
   background-color: #f6f6f6;
   align-self: stretch;
   margin-left: 1.5rem;
-  padding-top: 1rem;
+  padding: 1rem 1.5rem;
   border-left: 2px solid orange; }
 
 .about__title {
@@ -579,17 +588,17 @@ body {
       flex-direction: column;
       align-items: center; } }
 
-.special__icon {
-  color: orange;
-  margin-bottom: .5rem; }
-
-.special__title {
-  text-transform: uppercase;
-  margin-bottom: 1rem; }
-
-@media only screen and (max-width: 992px) {
-  .special {
-    margin-bottom: 1rem; } }
+.special {
+  padding: 0 1rem; }
+  .special__icon {
+    color: orange;
+    margin-bottom: .5rem; }
+  .special__title {
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  @media only screen and (max-width: 992px) {
+    .special {
+      margin-bottom: 1rem; } }
 
 .stat {
   flex: 1;

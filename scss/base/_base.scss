@@ -13,19 +13,8 @@ img {
 }
 
 body {
-    // color: blue;
-    
-    // @include mediaQuery(medium) {
-    //     color: green; 
-    // }
-    
-    // @include mediaQuery(small) {    
-    //     color: red;
-    // } 
-
-    // @include mediaQuery(xsmall) {
-    //     color: purple;
-    // }
+    line-height: 1.6;
+    letter-spacing: 1px;
 }
 
 a {
@@ -122,6 +111,11 @@ ul {
     //     }
     // }
     &--specialize {
+        // width: 25%;
+        & > * {
+            width: 25%;
+        }
+        
         @include mediaQuery(medium) {
             flex-wrap: wrap;
 
@@ -155,6 +149,12 @@ ul {
                 padding: 1rem;
             }
         } 
+    }
+
+    &--awards {
+        & > * {
+            width: 33.3333%;
+        }
     }
 
     // &--work {
